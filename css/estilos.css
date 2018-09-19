@@ -43,12 +43,6 @@ a:active {
     text-decoration: underline;
 }
 
-#imagen1 img{
-	width: 450px;
-	box-shadow: 2px 2px;
-	margin: 10px;
-}
-
 figure{
 	margin: 0;
 }
@@ -95,17 +89,17 @@ figure{
 }
 
 #imagenp1 img{
-	-webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+	-webkit-filter: blur(10px);
     filter: blur(10px);
 }
 
 #imagenp2 img,#imagenp4 img,#imagenp6 img{
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
 #imagenp3 img{
-	-webkit-filter: sepia(90%); /* Safari 6.0 - 9.0 */
+	-webkit-filter: sepia(90%);
     filter: sepia(90%);
 }
 
@@ -133,8 +127,13 @@ figcaption {
 
 	#imagen1{
 		text-align: center;
-		width: 100%;
 	}
+
+	#imagen1 img{
+	width: 450px;
+	box-shadow: 2px 2px;
+	margin: 10px;
+}
 
 
 	.contenedor2{
@@ -177,12 +176,20 @@ figcaption {
 	.barra{
 		margin-bottom: 2%;
 	}
-		footer > div{
+	
+	footer > div{
 	
 		padding: 10px;
 		margin: 10px;
 		width: 100%;
 	}
+
+	#imagen1 img{
+	width: 250px;
+	box-shadow: 2px 2px;
+	margin: 10px;
+}
+
 }
 
 /* Animacion del contenido global */
