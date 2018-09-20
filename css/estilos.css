@@ -16,6 +16,10 @@ footer
 	border-radius: 0px 0px 10px  10px;
 }
 
+footer strong{
+	font-size: 25px;
+}
+
 .contenido, .contenedor1, .contenedor2, #seccion{
 	margin: 0;
 	padding: 0;
@@ -31,10 +35,7 @@ footer
 
 a:hover {
     text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
+    cursor: pointer;
 }
 
 figure{
@@ -223,7 +224,7 @@ figcaption {
 	width: 250px;
 	box-shadow: 2px 2px;
 	margin: 10px;
-}
+	}
 
 }
 
