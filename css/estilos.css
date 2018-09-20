@@ -71,11 +71,18 @@ figure{
 	background-color: #82c3a6;
 }
 
-.contenedor2, .contenedor_paisajes{
+.contenedor2, .contenedor_paisajes, .contenedor_retratos{
 	background-color: #d5c75f;
 }
 
 .imagenp img{
+	width: 250px;
+	padding: 0px;
+    margin: 10px;
+    box-shadow: 2px 2px;
+}
+
+.imagenr img{
 	width: 250px;
 	padding: 0px;
     margin: 10px;
@@ -97,6 +104,21 @@ figure{
     filter: sepia(90%);
 }
 
+#imagenr1 img{
+	-webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+#imagenr2 img,#imagenr4 img,#imagenr6 img{
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#imagenr3 img{
+	-webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+
 figcaption { 
     display: block;
     text-align: center;
@@ -108,8 +130,9 @@ figcaption {
 /* tamaño de pantalla desktop */
 
 @media (min-width: 900px){
-	.titulo{
+	.titulo {
 		width: 80%;
+		margin-left: 20px;
 	}
 	.barra{
 		width: 20%
@@ -152,6 +175,13 @@ figcaption {
 
 	}
 
+	.contenedor_retratos{
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: center;
+
+	}
+
 	footer > div{
 	
 		padding: 10px;
@@ -168,7 +198,7 @@ figcaption {
 		width: 100%;
 		text-align: center;
 	}
-	.titulo{
+	.titulo h1{
 		margin-left: 20%;
 		margin-right: 20%;
 	}
